@@ -23,6 +23,7 @@
 		0019BDC919B2E281004B6826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0019BDA419B2E280004B6826 /* Foundation.framework */; };
 		0019BDD119B2E281004B6826 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0019BDCF19B2E281004B6826 /* InfoPlist.strings */; };
 		0019BDD419B2E281004B6826 /* ageOfLaikaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0019BDD319B2E281004B6826 /* ageOfLaikaTests.m */; };
+		0019BDDE19B2EDD2004B6826 /* 14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0019BDDD19B2EDD2004B6826 /* 14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		0019BDD019B2E281004B6826 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0019BDD219B2E281004B6826 /* ageOfLaikaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ageOfLaikaTests.h; sourceTree = "<group>"; };
 		0019BDD319B2E281004B6826 /* ageOfLaikaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ageOfLaikaTests.m; sourceTree = "<group>"; };
+		0019BDDD19B2EDD2004B6826 /* 14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg"; path = "../../../Downloads/14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				0019BDAE19B2E280004B6826 /* main.m */,
 				0019BDB019B2E280004B6826 /* ageOfLaika-Prefix.pch */,
 				0019BDB419B2E280004B6826 /* Default.png */,
+				0019BDDD19B2EDD2004B6826 /* 14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg */,
 				0019BDB619B2E280004B6826 /* Default@2x.png */,
 				0019BDB819B2E280004B6826 /* Default-568h@2x.png */,
 			);
@@ -237,6 +240,7 @@
 				0019BDB719B2E280004B6826 /* Default@2x.png in Resources */,
 				0019BDB919B2E280004B6826 /* Default-568h@2x.png in Resources */,
 				0019BDBC19B2E280004B6826 /* MainStoryboard.storyboard in Resources */,
+				0019BDDE19B2EDD2004B6826 /* 14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +384,7 @@
 				GCC_PREFIX_HEADER = "ageOfLaika/ageOfLaika-Prefix.pch";
 				INFOPLIST_FILE = "ageOfLaika/ageOfLaika-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,6 +396,7 @@
 				GCC_PREFIX_HEADER = "ageOfLaika/ageOfLaika-Prefix.pch";
 				INFOPLIST_FILE = "ageOfLaika/ageOfLaika-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

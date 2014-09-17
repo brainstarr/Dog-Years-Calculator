@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface BSViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *dogYearsLabel;
+@property (strong, nonatomic) IBOutlet UITextField *humanYearsTextField;
+- (IBAction)covertButton:(UIButton *)sender;
+- (IBAction)realDogYearConverterButton:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *realDogYearsLabel;
 
 @end

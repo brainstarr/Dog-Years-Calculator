@@ -1,23 +1,143 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="BSViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqU-e4-Rp6">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="covertButton:" destination="2" eventType="touchUpInside" id="KCP-DK-eVe"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter human years here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OIq-KJ-IUI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="8Gd-fP-rJK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dog Years:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNq-g3-3IJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="QBm-ae-SyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAh-Lk-1dy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="vfU-co-I4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ctF-Hv-R2x">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="SgP-45-p28"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPi-ak-G6l">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="z9x-S8-LBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Real Dog Year Converter">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="realDogYearConverterButton:" destination="2" eventType="touchUpInside" id="jjN-nj-ecv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Real Converter:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nS-lY-G7X">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Fe9-uE-2Wd"/>
+                                    <constraint firstAttribute="width" constant="122" id="ccb-5e-hLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="101-OA-t4x">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L4a-XI-0Tf"/>
+                                    <constraint firstAttribute="width" constant="79" id="U99-DR-s3G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OIq-KJ-IUI" firstAttribute="centerX" secondItem="ctF-Hv-R2x" secondAttribute="centerX" type="default" id="0m8-E1-usk"/>
+                            <constraint firstItem="ctF-Hv-R2x" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="707-Ul-e1d"/>
+                            <constraint firstItem="FAh-Lk-1dy" firstAttribute="top" secondItem="MNq-g3-3IJ" secondAttribute="top" type="default" id="8Bq-UR-0ur"/>
+                            <constraint firstItem="MNq-g3-3IJ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="Bem-MU-Yzg"/>
+                            <constraint firstItem="DqU-e4-Rp6" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EiL-Um-myJ"/>
+                            <constraint firstItem="FAh-Lk-1dy" firstAttribute="baseline" secondItem="MNq-g3-3IJ" secondAttribute="baseline" type="default" id="F6M-XQ-5ex"/>
+                            <constraint firstItem="DqU-e4-Rp6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="207" id="G69-ip-HyD"/>
+                            <constraint firstAttribute="trailing" secondItem="FAh-Lk-1dy" secondAttribute="trailing" constant="51" id="GGr-r3-Q7O"/>
+                            <constraint firstItem="MNq-g3-3IJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="47" id="Gic-Li-VJs"/>
+                            <constraint firstItem="6nS-lY-G7X" firstAttribute="top" secondItem="3" secondAttribute="top" constant="103" id="Ha5-68-huX"/>
+                            <constraint firstItem="OIq-KJ-IUI" firstAttribute="leading" secondItem="GPi-ak-G6l" secondAttribute="leading" type="default" id="Mx6-Ys-U5C"/>
+                            <constraint firstItem="FAh-Lk-1dy" firstAttribute="trailing" secondItem="101-OA-t4x" secondAttribute="trailing" type="default" id="ODb-Z9-m0n"/>
+                            <constraint firstItem="101-OA-t4x" firstAttribute="baseline" secondItem="6nS-lY-G7X" secondAttribute="baseline" type="default" id="OT6-PQ-s2V"/>
+                            <constraint firstItem="OIq-KJ-IUI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="152" id="QFF-E6-qVS"/>
+                            <constraint firstItem="ctF-Hv-R2x" firstAttribute="top" secondItem="3" secondAttribute="top" constant="268" id="bKz-OY-Knw"/>
+                            <constraint firstItem="GPi-ak-G6l" firstAttribute="baseline" secondItem="DqU-e4-Rp6" secondAttribute="baseline" type="default" id="cCh-9m-VEX"/>
+                            <constraint firstItem="ctF-Hv-R2x" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="dNp-5M-S0J"/>
+                            <constraint firstItem="6nS-lY-G7X" firstAttribute="leading" secondItem="MNq-g3-3IJ" secondAttribute="leading" type="default" id="lEw-fS-mNS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dogYearsLabel" destination="FAh-Lk-1dy" id="dcZ-da-9yq"/>
+                        <outlet property="humanYearsTextField" destination="OIq-KJ-IUI" id="i2B-dP-yK0"/>
+                        <outlet property="realDogYearsLabel" destination="101-OA-t4x" id="lFi-yA-TkJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="14029474122014-02-10_12-52-24__LaikaSpaceDog.jpg" width="220" height="136"/>
+    </resources>
+    <classes>
+        <class className="BSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="covertButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="realDogYearConverterButton:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dogYearsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="humanYearsTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="realDogYearsLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
